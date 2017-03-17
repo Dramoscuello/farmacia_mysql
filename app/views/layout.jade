@@ -17,6 +17,7 @@ html(lang='es')
     link(href='css/animate.css', rel='stylesheet')
     link(href='css/style.css', rel='stylesheet')
     link(href='css/chat.css', rel='stylesheet')
+    link(href='css/estilos.css', rel='stylesheet')
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700')
     // boxed bg
     link#bodybg(href='bodybg/bg1.css', rel='stylesheet', type='text/css')
@@ -31,7 +32,7 @@ html(lang='es')
         .chat-history
           .chat-message.clearfix
             ul(id="messages")
-        form(action='', id="chatter")
+        form(action='', id="chatter" autocomplete='off')
           fieldset
             input(id="m" type='text', placeholder='Escribenos un mensaje…', autofocus='')
             button.btn.btn-enviar Enviar
@@ -78,9 +79,9 @@ html(lang='es')
                   b.caret
                 ul.dropdown-menu
                   li
-                    a(href='#') Iniciar sesion
+                    a(href='/signin') Iniciar sesion
                   li
-                    a(href='#') Registrarme
+                    a(href='/signup') Registrarme
               li.dropdown
                 a.dropdown-toggle(href='#', data-toggle='dropdown')
                   span.badge.custom-badge.red.pull-right 0
