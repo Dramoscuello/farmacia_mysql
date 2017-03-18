@@ -32,7 +32,7 @@ html(lang='es')
         .chat-history
           .chat-message.clearfix
             ul(id="messages")
-        form(action='', id="chatter" autocomplete='off')
+        form.form-chat(action='', id="chatter" autocomplete='off')
           fieldset
             input(id="m" type='text', placeholder='Escribenos un mensaje…', autofocus='')
             button.btn.btn-enviar Enviar
@@ -92,6 +92,14 @@ html(lang='es')
                     a(href='#') xxxx
                   li
                     a(href='#') xxx
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  span.badge.custom-badge.red.pull-right
+                  | Usuario
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='') Cerrar sesion
           // /.navbar-collapse
         // /.container
       // Section: intro

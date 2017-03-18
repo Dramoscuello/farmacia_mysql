@@ -9,7 +9,7 @@ var config = {
       name: 'farmacia-sql'
     },
     port: process.env.PORT || 8080,
-    db: 'mysql://localhost/farmacia'
+    //db: 'mysql://localhost/farmacia'
   },
 
   test: {
@@ -18,7 +18,7 @@ var config = {
       name: 'farmacia-sql'
     },
     port: process.env.PORT || 8080,
-    db: 'mysql://localhost/farmacia'
+    //db: 'mysql://localhost/farmacia'
   },
 
   production: {
@@ -27,7 +27,7 @@ var config = {
       name: 'farmacia-sql'
     },
     port: process.env.PORT || 8080,
-    db: 'mysql://localhost/farmacia'
+    //db: 'mysql://localhost/farmacia'
   }
 };
 
